@@ -12,7 +12,7 @@ function App() {
       return;
     }
     try {
-      const response = await axios.get(`http://localhost:5000/api/greet?name=${name}`);
+      const response = await axios.get(`https://younglab-backend.onrender.com/api/greet?name=${name}`);
       setGreeting(response.data.message);
     } catch (error) {
       setGreeting("Error fetching greeting.");
